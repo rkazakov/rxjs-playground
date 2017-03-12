@@ -1,22 +1,12 @@
-import {Observable} from 'rxjs';
+import {Observable, Observer} from 'rxjs';
 
 let numbers = [1, 5, 10];
 
 // Promise | Array
 let source = Observable.from(numbers);
 
-class MyObserver {
-  next(value) {
-    console.log(`value: ${value}`);
-  }
-
-  error(e) {
-    console.log(`error: ${e}`);
-  }
-
-  complete() {
-    console.log('complete');
-  }
-}
-
-source.subscribe(new MyObserver());
+source.subscribe(
+  value => console.log(`value: ${value}`),
+  e => console.log(`error: ${e}`),
+  () => console.log('complete')
+);
