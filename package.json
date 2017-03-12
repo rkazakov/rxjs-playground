@@ -2,7 +2,7 @@
   "name": "rxjs-playground",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "webpack-dev-server --watch --inline",
     "postinstall": "typings install"
