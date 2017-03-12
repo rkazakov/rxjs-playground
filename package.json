@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --watch --inline"
+    "start": "webpack-dev-server --watch --inline",
+    "postinstall": "typings install"
   },
   "repository": {
     "type": "git",
