@@ -4,9 +4,7 @@
 
 `npm install`
 
-```
-node_modules/.bin/typings install dt~es6-shim --global --save
-```
+`node_modules/.bin/typings install dt~es6-shim --global --save`
 
 ## Modules
 

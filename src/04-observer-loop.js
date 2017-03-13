@@ -10,4 +10,4 @@ var source = rxjs_1.Observable.create(function (observer) {
     observer.complete();
 });
 source.subscribe(function (value) { return console.log("value: " + value); }, function (e) { return console.log("error: " + e); }, function () { return console.log('complete'); });
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=04-observer-loop.js.map
